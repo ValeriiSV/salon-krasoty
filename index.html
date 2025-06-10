@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Салон красоты</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff4f7;
+      color: #333;
+    }
+    header {
+      background: #fce4ec;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      color: #b8860b;
+      margin-bottom: 10px;
+    }
+    header button {
+      background: #b8860b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 32px;
+      color: #b8860b;
+      margin-bottom: 30px;
+    }
+    .services, .testimonials, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: #f8bbd0;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    a {
+      color: #b8860b;
+      text-decoration: none;
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+    .btn-book {
+      background: #b8860b;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Салон красоты</h1>
+    <p>Добро пожаловать в мир стиля и красоты</p>
+    <style>
+  .btn-book {
+    background: #0088cc;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .btn-book:hover {
+    background: #006fa1;
+    transform: scale(1.05);
+  }
+  .btn-book svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+</style>
+
+<a class="btn-book" href="https://t.me/tataru_tatiana" target="_blank">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.993 15.447l-.396 5.57c.567 0 .814-.243 1.114-.534l2.668-2.497 5.528 4.043c1.013.56 1.737.265 1.992-.93L23.94 4.94c.32-1.305-.495-1.815-1.384-1.5L1.6 10.424c-1.29.493-1.27 1.192-.22 1.51l5.676 1.77 13.174-8.312c.62-.412 1.18-.185.717.227L9.993 15.447z" />
+  </svg>
+  Онлайн-запись в Telegram
+</a>
+
+  </header>
+
+  <section>
+    <h2 class="section-title">Наши услуги</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Стрижки</h3>
+        <p>Индивидуальный подход к каждому клиенту</p>
+      </div>
+      <div class="card">
+        <h3>Укладки</h3>
+        <p>Праздничные и повседневные образы</p>
+      </div>
+      <div class="card">
+        <h3>Окрашивание</h3>
+        <p>Естественные и яркие оттенки</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Отзывы клиентов</h2>
+    <div class="testimonials">
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Emma">
+        <h4>Эмма</h4>
+        <p>Очень довольна результатом, мастера просто супер!</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Olivia">
+        <h4>Оливия</h4>
+        <p>Салон — место, куда хочется возвращаться!</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Sophia">
+        <h4>София</h4>
+        <p>Высокий уровень сервиса и отличный результат!</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Галерея</h2>
+    <div class="gallery">
+      <img class="card" src="https://via.placeholder.com/250x250" alt="work1">
+      <img class="card" src="https://via.placeholder.com/250x250" alt="work2">
+      <img class="card" src="https://via.placeholder.com/250x250" alt="work3">
+    </div>
+  </section>
+
+  <footer class="contact">
+    <h2 class="section-title">Контакты</h2>
+    <p>Адрес: ул. Примерная, 123</p>
+    <p>Телефон: <a href="tel:+79999999999">+7 999 999-99-99</a></p>
+    <p>WhatsApp: <a href="https://wa.me/79999999999">Написать</a></p>
+    <p>Instagram: <a href="#">@beautysalon</a></p>
+    <br>
+    <a class="btn-book" href="#">Онлайн-запись</a>
+  </footer>
+</body>
+</html>
